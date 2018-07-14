@@ -1,6 +1,9 @@
 # Javascript Progress Bar Library
 
-Initialze as follows: 
+[Check out the github pages version](https://darrencarlin.github.io/Progress-Bar-Library/)
+
+
+Open the console and initialze as follows: 
 
 const scrollbar = new Scrollbar();
 
