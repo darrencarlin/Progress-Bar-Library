@@ -2,8 +2,7 @@ function Scrollbar() {
   'use strict';
 
   const [body] = [document.body];
-  const docHeight = body.scrollHeight;
-  const winHeight = window.innerHeight;
+
   const template = document.createElement('div');
   template.setAttribute('id', 'topBar');
   template.setAttribute('class', 'top-bar');
@@ -34,6 +33,8 @@ function Scrollbar() {
 
   const run = function run() {
     window.addEventListener('scroll', () => {
+      const docHeight = body.scrollHeight;
+      const winHeight = window.innerHeight;
       const winTop = document.scrollingElement.scrollTop;
       const scrolled = winTop / (docHeight - winHeight) * 100;
       template.style.width = `${scrolled}%`;
