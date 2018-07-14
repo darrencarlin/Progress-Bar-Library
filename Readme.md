@@ -12,4 +12,6 @@ scrollbar.add({
      'color':'linear-gradient(to right, #fc466b, #3f5efb)'
      });
 
+running scrollbar.add() will use default settings;
+
 currently only size and color work as custom options
