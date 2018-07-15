@@ -11,7 +11,6 @@
 
 
 <body>
-    <!-- <div id="topBar" class="top-bar">&nbsp;</div> -->
     <div id="content" class="content">
         <h3>Lorem ipsum </h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quas est ex ducimus molestias a fugiat ullam possimus,
@@ -97,9 +96,13 @@
     </div>
     <script src="Scrollbar.js"></script>
     <script>
-        
-        const scrollbar = new Scrollbar(); 
-        scrollbar.add({'size':'5px','color':'linear-gradient(to right, #fc466b, #3f5efb)'});
+        const scrollbar = new Scrollbar();
+        scrollbar.add({
+            'pos':'top',
+            'size': '15px',
+            'color': 'rgba(0,0,0,.6)',
+            'transition': 'width .2s linear'
+        });
     </script>
 </body>
 
