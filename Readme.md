@@ -6,6 +6,7 @@
 Open the console and initialze as follows: 
 
 > const scrollbar = new Scrollbar();
+
 > scrollbar.add();
 
 running scrollbar.add() will use default settings;
