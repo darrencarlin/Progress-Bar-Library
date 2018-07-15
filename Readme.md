@@ -5,9 +5,10 @@
 
 Simply add this code to initialize:
 
-> const scrollbar = new Scrollbar();
->
-> scrollbar.add(); // default settings 
+```javascript
+const scrollbar = new Scrollbar();
+scrollbar.add(); // default settings 
+```
 
 Pass in an object to customise settings
 
