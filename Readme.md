@@ -3,17 +3,15 @@
 [Check out the github pages version](https://darrencarlin.github.io/Progress-Bar-Library/)
 
 
-Open the console and initialze as follows: 
+Simply add this code to initialize:
 
 > const scrollbar = new Scrollbar();
 >
-> scrollbar.add();
+> scrollbar.add(); // default settings 
 
-running scrollbar.add() will use default settings;
+Pass in an object to customise settings
 
-pass in an object to customise settings
-
-size, color and transition should take css styles 
+**size**, **color** and **transition** should take css styles 
 
    settings = {
     'pos':'top', // Position bar 'top' or 'bottom'
