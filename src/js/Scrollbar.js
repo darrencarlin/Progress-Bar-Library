@@ -1,9 +1,9 @@
-function Scrollbar() {
+function Scroll() {
   'use strict';
 
   const [body] = [document.body];
 
-  // create element and attach attributes 
+  // create element and attach attributes
 
   const template = document.createElement('div');
   template.setAttribute('id', 'topBar');
@@ -24,7 +24,7 @@ function Scrollbar() {
     transition: 'width .2s linear'
   };
 
-  // default styling 
+  // default styling
 
   Object.assign(template.style, {
     background: settings.color,
@@ -50,9 +50,9 @@ function Scrollbar() {
 
   this.add = function add(options) {
 
-    let opts = options
+    const opts = options;
 
-    // check if options are passed in as object or not at all 
+    // check if options are passed in as object or not at all
 
     if (typeof options === 'object' || typeof options === 'undefined') {
 
@@ -82,3 +82,7 @@ function Scrollbar() {
   };
 
 }
+
+// export as global variable
+
+global.Scrollbar = Scroll;
